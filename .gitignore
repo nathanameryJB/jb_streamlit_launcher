@@ -1,0 +1,14 @@
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+*.egg
+*.log
+*.sqlite
+*.tar.gz
+
+
+# If you're using a virtual environment
+bin/
+lib/
+include/
