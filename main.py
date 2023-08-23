@@ -54,6 +54,10 @@ def main():
     )
 
     st.write("This is a handy launcher for various apps to make your life easier when working with data and at jewellerybox")
+
+    st.divider()
+    st.write("")
+
     # Define your other Streamlit apps, their URLs, and descriptions
     apps = {
         "Image Extractor": {
@@ -81,7 +85,7 @@ def main():
             webbrowser.open(app_details["url"], new=2)  # new=2 opens in a new tab
 
         # Add a separator line and space
-        st.write("---")
+        st.divider()
         st.write(" ")
 
 
