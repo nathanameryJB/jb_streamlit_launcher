@@ -80,9 +80,8 @@ def main():
 
         st.write(app_details["description"])
 
-        # Create a button for each app
-        if st.button(f"Launch {app_name}"):
-            webbrowser.open(app_details["url"], new=2)  # new=2 opens in a new tab
+        # Create a hyperlink for each app
+        st.markdown(f"[Launch {app_name}]({app_details['url']})")
 
         # Add a separator line and space
         st.divider()
