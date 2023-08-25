@@ -1,5 +1,4 @@
 import streamlit as st
-import webbrowser
 
 
 def main():
@@ -53,23 +52,30 @@ def main():
         unsafe_allow_html=True
     )
 
-    st.write("This is a handy launcher for various apps to make your life easier when working with data and at jewellerybox")
+    st.write("This is a handy launcher for various apps to make your life easier when working with data at jewellerybox")
 
     st.divider()
     st.write("")
 
     # Define your other Streamlit apps, their URLs, and descriptions
     apps = {
-        "Image Extractor": {
+        "Image Crawl & Extract": {
             "url": "https://jewellerybox-image-crawler.streamlit.app/",
             "description": "This app takes a list of product ids and tells you exactly which product images show up on each page",
-            "icon": ":camera:"
+            "icon": ":spider:"
         },
         "White Background Checker": {
             "url": "https://image-checker.streamlit.app/",
             "description": "This app takes a list of image URLs (from anywhere) and tells you if they have white backgrounds",
              "icon": ":art:"
-        }
+        },
+
+               "Photography Checker": {
+                   "url": "https://jb-photography-checker.streamlit.app/",
+                   "description": "This app takes the image list we use internally and allows the user to check each image, confirm it's ok or not and download the results",
+                   "icon": ":camera:"
+               }
+
 
         # Add more apps as needed
     }
